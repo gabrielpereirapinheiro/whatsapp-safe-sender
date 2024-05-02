@@ -20,8 +20,9 @@
 
   const decryptNote=(text) =>{
     try {
-      let decryptText = sjcl.json.decrypt(MY_KEY, text);
-      return decryptText;
+        const decodedData = atob(text);
+      let decryptText = sjcl.json.decrypt(MY_KEY, decodedData);
+      return decryptText+" 🔒";
     } catch (e) {
       console.log(e);
       return text;
@@ -31,7 +32,10 @@
   const encryptNote=(text) =>{
     try {
       let test = sjcl.json.encrypt(MY_KEY, text);
-      return test;
+const encodedData = btoa(test); // encode a string
+
+
+      return encodedData;
     } catch (e) {
       return text;
     }
