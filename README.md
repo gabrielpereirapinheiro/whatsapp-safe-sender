@@ -1,0 +1,1 @@
+# whatsapp-safe-sender
