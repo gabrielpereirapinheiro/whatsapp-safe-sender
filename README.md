@@ -9,6 +9,8 @@
 ## Attention
 
 ## Install
+https://github.com/gabrielpereirapinheiro/whatsapp-safe-sender/raw/main/whatsapp-safe-sender.js
+
 
 ## Contributions
 Contributions are welcome! Feel free to propose improvements, bug fixes, or additional features to the script.
